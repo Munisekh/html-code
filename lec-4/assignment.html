@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+    <style>
+    table,
+    th,
+    td {
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+    tr {
+        text-align: center;
+    }
+</style>
+</head>
+<body>
+    <table style="margin-left: auto; margin-right: auto; width: 50%">
+        <caption >
+            Employee's Data
+        </caption>
+        <colgroup>
+            <col span= "2" style="background-color:aquamarine;width:200px">
+            <col span= "2" style="background-color:pink;width:200px">
+            <col span= "2" style="background-color:rgb(67, 98, 126);width:200px">
+        </colgroup>
+        <thead>
+            <tr>
+                <th>s.no</th>
+                <th>Name</th>
+                <th>Age</th>
+                <th>salary</th>
+                <th>Designation</th>
+                <th>Profile image</th>
+            </tr>
+        </thead>
+            <tbody>
+                <tr>
+                <td>1</td>
+                <td>ntr</td>
+                <td>35</td>
+                <td>12lac</td>
+                <td rowspan="4" >Actor</td>
+                <td><img src="./images/ntr.jpg" style="width:100px;height:100px"></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>prabhas</td>
+                    <td>36</td>
+                    <td>15lac</td>
+                    <!-- <td>Actor</td> -->
+                    <td><img src="./images/prabha.jpg" style="width:100px;height:100px"></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Dulqer</td>
+                    <td rowspan="2"style="background-color:white">35</td>
+                    <td>16lac</td>
+                    <!-- <td>Actor</td> -->
+                    <td><img src="./images/dulqer.jpg"style="width:100px;height:100px"></td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td> Mahesh</td>
+                    <!-- <td>35</td> -->
+                    <td>18lac</td>
+                    <!-- <td>Actor</td> -->
+                    <td><img src="./images/M B.jpg"style="width:100px;height:100px"></td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>ramesh</td>
+                    <td colspan="2">16</td>
+                    <!-- <td>16</td> -->
+                    <td style="background-color:rgb(113, 146, 146)">Engineer</td>
+                    <td><img src="./images/ramesh.jpg" style="width:100px;height:100px"></td>
+                </tr>
+            </tbody>
+    </table>
+    
+</body>
+</html>
